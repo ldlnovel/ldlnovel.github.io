@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no" />
-<meta name="author" content="John Doe" />
+<meta name="author" content="LNovel DD" />
 
 
     
@@ -100,7 +100,7 @@
             <img src="/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">John Doe</a></h1>
+          <h1 class="header-author"><a href="/">LNovel DD</a></h1>
         </hgroup>
 
         
@@ -217,7 +217,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">LNovel DD</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -225,7 +225,7 @@
                 <img src="/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">LNovel DD</a></h1>
             </hgroup>
             
             <nav class="header-menu">
@@ -258,74 +258,6 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
-  
-    <article id="post-IE兼容性" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2017/05/08/IE兼容性/" class="article-date">
-      <time datetime="2017-05-08T12:00:34.353Z" itemprop="datePublished">2017-05-08</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/08/IE兼容性/">IE兼容性</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>一、JS</p>
-<p>1、事件绑定：addEventListenter与attachEvent事件处理函数中this的指向不同，IE指向window<br>2、获取事件对象：事件处理函数 window.event<br>3、获取触发事件的DOM元素：现代浏览器 event.target ,IE event.srcElement<br>4、阻止默认行为:e.preventDefault(), e.returnValue=false<br>5、阻止冒泡:e.stopPropagation(), e.cancelBubble=true;<br>6、获取样式信息:getCumputedStyle(obj,null).width, currentStyel.width<br>7、实例化XHR对象: new XMLHttpRequest() ,new ActiveXObject()<br>8、获取DOM元素:parentNode parentElement</p>
-<p>二、CSS属性</p>
-<p>window.event对象差异<br>IE：有window.event对象<br>FF：没有window.event对象。可以通过给函数的参数传递event对象。如onmousemove=doMouseMove(event)</p>
-<p>获取鼠标当前坐标<br>IE：event.x和event.y。<br>FF：event.pageX和event.pageY。<br>通用：两者都有event.clientX和event.clientY属性</p>
-<p>鼠标当前坐标(加上滚动条滚过的距离)<br>IE:event.offsetX和event.offsetY。<br>FF:event.layerX和event.layerY。</p>
-<p>获取窗体的高度和宽度<br>IE:document.body.offsetWidth和document.body.offsetHeight。注意：此时一定要有body标签<br>FF:window.innerWidth和window.innerHeight,以及document.documentElement.clientWidht和document.body.clientHeight。<br>通用：document.body.clientWidht和document.body.clientHeight。</p>
-<p>添加事件<br>IE:element.attachEvent(‘onclick’,func).<br>FF:element.addEventListener(‘click’,func,true).<br>通用：element.onclick=func。</p>
-<p>标签的自定义属性<br>IE: 如果给标签div1定义了一个属性value，可以div1.value和div1[“value”]<br>FF: 不能用上面的方法。<br>通用：div1.getAttribute(‘value’)。</p>
-<p>父节点、子节点和删除节点<br>IE: parentElement、parement.children,element.removeNode(true)。<br>FF：parentNode、parentNode.childNodes，node.parentNode.removeChild(node)。</p>
-<p>clentX,pageX,offsetX,layerX,screenX,offsetLeft<br>screenX:鼠标在显示屏幕上的坐标。<br>clientX：鼠标在页面显示区域的坐标。<br>以上都是浏览器通用的。一下为特有方法：<br>pageX:现代游览器都有。鼠标在页面上的位置，从页面左上角开始定位。<br>offsetX:IE特有。鼠标相对于触发事件的元素的位置，从内容左上角开始定位，从border左上角开始！</p>
-<p>注：IE和FF的定位有个1px的差别，实际上，IE的定位从0开始，FF的定位从1开始，FF永远会比IE大1px，需要根据实际情况处理。</p>
-<p>offsetLeft:这个属性不是事件对象的属性，而是DOM对象所有的，该属性表示是DOM对象的层级关系中里该对象最近的，设置了postion的父对象中的位置，虽然话是这么说的，但是不同的浏览器效果不一样。</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -402,7 +334,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016-2017 John Doe
+                2016-2017 LNovel DD
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
